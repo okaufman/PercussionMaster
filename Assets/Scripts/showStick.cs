@@ -22,8 +22,8 @@ public class showStick : MonoBehaviour
         if(onScreen && !availableSticks)
         {
             availableSticks = true;
-            leftStick = Instantiate(stickType, leftHand, false);
-            rightStick = Instantiate(stickType, rightHand, false);
+            leftStick = Instantiate(stickType, -leftHand.position + new Vector3(0,0.1f,0), leftHand.rotation, leftHand);
+            rightStick = Instantiate(stickType, rightHand.position + new Vector3(0, 0.1f, 0), rightHand.rotation, rightHand);
         }
         else if(!onScreen)
         {
