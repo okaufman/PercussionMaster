@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 
 public class drumscript : MonoBehaviour
 {
+  
     public AudioSource drumSound;
     // Start is called before the first frame update
     void Start()
@@ -15,8 +17,10 @@ public class drumscript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("bam");
+      //  Debug.Log("hit");
         drumSound.Play();
+
+  ;
 
     }
 }

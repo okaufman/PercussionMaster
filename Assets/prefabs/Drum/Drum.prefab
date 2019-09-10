@@ -355,7 +355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6cb820dfa5dbe4438f8e8c7bca9778b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drumSound: {fileID: 0}
+  drumSound: {fileID: 1875680448}
 --- !u!1 &924518096087804564
 GameObject:
   m_ObjectHideFlags: 0

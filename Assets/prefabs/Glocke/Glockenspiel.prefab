@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 220676161660070735}
   - component: {fileID: 259716752}
   - component: {fileID: 259716751}
+  - component: {fileID: 1715228578}
   m_Layer: 0
   m_Name: Glocke
   m_TagString: Untagged
@@ -291,8 +292,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 928b48e96f7f0754ca2dde2ef8dbfa4e, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 3fcf1360b89278f47ae1757101f72cfa, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -377,6 +378,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &1715228578
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220676161660070734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4084886, y: 0.10613607, z: 0.17291772}
+  m_Center: {x: 0.009395041, y: 0.012934961, z: -0.0020911468}
 --- !u!1 &220676161696602455
 GameObject:
   m_ObjectHideFlags: 0

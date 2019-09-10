@@ -108,19 +108,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1111313639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2349104708780492922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6cb820dfa5dbe4438f8e8c7bca9778b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  drumSound: {fileID: 1111313638}
 --- !u!82 &1111313638
 AudioSource:
   m_ObjectHideFlags: 0
@@ -131,8 +118,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b865bf6785ca59c41b9454ead1f658b9, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: afc2bfe6556ffb74c891281d33ce5658, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -217,6 +204,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1111313639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2349104708780492922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6cb820dfa5dbe4438f8e8c7bca9778b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drumSound: {fileID: 1111313638}
 --- !u!1 &7875536349391183084
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,6 +352,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 87877873e4472194f8b992edd78d8fcb, type: 2}
+    - target: {fileID: 3565025950647870907, guid: 58a53f6f19164f0469581bb4ccdf9a29,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58a53f6f19164f0469581bb4ccdf9a29, type: 3}
 --- !u!1 &2349104708780492922 stripped
