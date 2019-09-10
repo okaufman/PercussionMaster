@@ -13,7 +13,9 @@ public class showStick : MonoBehaviour
     private bool availableSticks = false;
     private GameObject leftStick = null;
     private GameObject rightStick = null;
-    private Quaternion rotationLeftHand;
+    private Transform transformLefStick;
+    private Transform transformRightStick;
+    private Quaternion rotationLeftStick;
     private Quaternion rotationRightHand;
 
     Quaternion quaternion;
@@ -25,13 +27,10 @@ public class showStick : MonoBehaviour
         bool onScreen = screenPoint.x > 0.4 && screenPoint.x < 0.6 && screenPoint.z > 0.4 && screenPoint.z > 0.6;
         if(onScreen && !availableSticks)
         {
-            rotationLeftHand = leftHand.rotation;
-            rotationRightHand = rightHand.rotation;
-            rotationLeftHand.Set(0, 0, 90, 0);
-            rotationRightHand.Set(0, 0, 90, 0);
             availableSticks = true;
-            leftStick = Instantiate(stickType, leftHand.position + new Vector3(0,0.1f,0), rotationLeftHand, leftHand);
-            rightStick = Instantiate(stickType, rightHand.position + new Vector3(0, 0.1f, 0), rotationRightHand, rightHand);
+            leftStick = Instantiate(stickType, leftHand,false);
+            rightStick = Instantiate(stickType, rightHand, false);
+            transformLefStick = leftStick.GetComponent<Transform>();
         }
         else if(!onScreen)
         {
