@@ -13,7 +13,8 @@ public class vibrateRight : MonoBehaviour
         Debug.Log("hatics trigger entered");
 
 
-        hapticAction.Execute(0, 1, 150, 75, SteamVR_Input_Sources.RightHand);
+        hapticAction.Execute(0, 0.1f, 150, 75, SteamVR_Input_Sources.RightHand);
+        
 
     }
 }
