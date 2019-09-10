@@ -16,6 +16,8 @@ public class showStick : MonoBehaviour
     private Quaternion rotationLeftHand;
     private Quaternion rotationRightHand;
 
+    Quaternion quaternion;
+
     // Update is called once per frame
     void Update()
     {
