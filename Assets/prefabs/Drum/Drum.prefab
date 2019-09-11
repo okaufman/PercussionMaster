@@ -434,5 +434,5 @@ MonoBehaviour:
   rightFingerEnd: {fileID: 0}
   xMin: 0.3
   xMax: 0.65
-  zMin: 4
+  zMin: 0.4
   zMax: 0.7
