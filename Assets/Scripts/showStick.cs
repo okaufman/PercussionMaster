@@ -20,10 +20,6 @@ public class showStick : MonoBehaviour
     private bool availableSticks = false;
     private GameObject leftStick = null;
     private GameObject rightStick = null;
-    private Transform transformLefStick;
-    private Transform transformRightStick;
-    private Quaternion rotationLeftStick;
-    private Quaternion rotationRightHand;
 
     Quaternion quaternion;
 
@@ -37,7 +33,6 @@ public class showStick : MonoBehaviour
             availableSticks = true;
             leftStick = Instantiate(stickType, leftHand,false);
             rightStick = Instantiate(stickType, rightHand, false);
-            transformLefStick = leftStick.GetComponent<Transform>();
         }
         else if(!onScreen || !isHandClosed())
         {
