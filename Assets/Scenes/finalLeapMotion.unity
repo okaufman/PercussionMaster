@@ -183,29 +183,10 @@ PrefabInstance:
     - target: {fileID: 48575043, guid: 51e80717957d593469a2b0cc9ac8e898, type: 3}
       propertyPath: cameraView
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1478897938}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e80717957d593469a2b0cc9ac8e898, type: 3}
---- !u!1 &247820192 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2349104708780492922, guid: 264315b642bc18b4e92754cd2b58d710,
-    type: 3}
-  m_PrefabInstance: {fileID: 1582119251}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &247820193
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247820192}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 12.641152, z: 1.0000002}
-  m_Center: {x: 0.000000074505806, y: -5.3205733, z: -0.000000074505806}
---- !u!43 &259144566
+--- !u!43 &176757981
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -368,6 +349,25 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &247820192 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2349104708780492922, guid: 264315b642bc18b4e92754cd2b58d710,
+    type: 3}
+  m_PrefabInstance: {fileID: 1582119251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &247820193
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247820192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 12.641152, z: 1.0000002}
+  m_Center: {x: 0.000000074505806, y: -5.3205733, z: -0.000000074505806}
 --- !u!1 &342732241
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,43 +624,9 @@ PrefabInstance:
     - target: {fileID: 672023722, guid: 9cac327b6499fe542b97524eb72c9449, type: 3}
       propertyPath: cameraView
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1478897938}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cac327b6499fe542b97524eb72c9449, type: 3}
---- !u!21 &690585822
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,10 +921,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stickType: {fileID: 158008961455133859, guid: 39c2ad1bd99534844ac583810cd79344,
     type: 3}
-  cameraView: {fileID: 0}
+  cameraView: {fileID: 1478897938}
   targetPoint: {fileID: 926880233}
-  leftHand: {fileID: 0}
-  rightHand: {fileID: 0}
+  leftHand: {fileID: 1478897937}
+  rightHand: {fileID: 1478897936}
+  leftPalm: {fileID: 1478897935}
+  rightPalm: {fileID: 1478897934}
+  leftFingerEnd: {fileID: 1478897933}
+  rightFingerEnd: {fileID: 1478897932}
 --- !u!4 &926880233 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 220676160589584630, guid: 9cac327b6499fe542b97524eb72c9449,
@@ -1056,6 +1026,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!21 &1239705061
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1324541119 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 924518096087804564, guid: e1236fb96ddbf8b4badfad65c70276a5,
@@ -1076,10 +1080,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stickType: {fileID: 7064803483598027860, guid: 40336527280a6f9408d8b91e181aec7e,
     type: 3}
-  cameraView: {fileID: 0}
+  cameraView: {fileID: 1478897938}
   targetPoint: {fileID: 1324541122}
-  leftHand: {fileID: 0}
-  rightHand: {fileID: 0}
+  leftHand: {fileID: 1478897937}
+  rightHand: {fileID: 1478897936}
+  leftPalm: {fileID: 1478897935}
+  rightPalm: {fileID: 1478897934}
+  leftFingerEnd: {fileID: 1478897933}
+  rightFingerEnd: {fileID: 1478897932}
 --- !u!4 &1324541122 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 924518096087804565, guid: e1236fb96ddbf8b4badfad65c70276a5,
@@ -1157,15 +1165,57 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 690585822}
+      objectReference: {fileID: 1239705061}
     - target: {fileID: 6774107973184468039, guid: 769476291dea96240ac4946e965a36d7,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 259144566}
+      objectReference: {fileID: 176757981}
     m_RemovedComponents:
     - {fileID: 6774107974344926325, guid: 769476291dea96240ac4946e965a36d7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 769476291dea96240ac4946e965a36d7, type: 3}
+--- !u!4 &1478897932 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6778835858842062295, guid: 769476291dea96240ac4946e965a36d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1478897931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1478897933 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6778889176426126513, guid: 769476291dea96240ac4946e965a36d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1478897931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1478897934 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6778488728193055855, guid: 769476291dea96240ac4946e965a36d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1478897931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1478897935 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6778603222392851511, guid: 769476291dea96240ac4946e965a36d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1478897931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1478897936 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6774107973174551298, guid: 769476291dea96240ac4946e965a36d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1478897931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1478897937 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6774107974796791135, guid: 769476291dea96240ac4946e965a36d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1478897931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1478897938 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6792970473591835357, guid: 769476291dea96240ac4946e965a36d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1478897931}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1582119251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1240,7 +1290,7 @@ PrefabInstance:
     - target: {fileID: 1582119254, guid: 264315b642bc18b4e92754cd2b58d710, type: 3}
       propertyPath: cameraView
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1478897938}
     m_RemovedComponents:
     - {fileID: 8593895958560821341, guid: 264315b642bc18b4e92754cd2b58d710, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 264315b642bc18b4e92754cd2b58d710, type: 3}
@@ -1328,7 +1378,7 @@ PrefabInstance:
     - target: {fileID: 1875680451, guid: e1236fb96ddbf8b4badfad65c70276a5, type: 3}
       propertyPath: cameraView
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1478897938}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1236fb96ddbf8b4badfad65c70276a5, type: 3}
 --- !u!1 &1883744195 stripped
@@ -1350,10 +1400,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stickType: {fileID: 0}
-  cameraView: {fileID: 0}
+  cameraView: {fileID: 1478897938}
   targetPoint: {fileID: 1883744197}
-  leftHand: {fileID: 0}
-  rightHand: {fileID: 0}
+  leftHand: {fileID: 1478897937}
+  rightHand: {fileID: 1478897936}
+  leftPalm: {fileID: 1478897935}
+  rightPalm: {fileID: 1478897934}
+  leftFingerEnd: {fileID: 1478897933}
+  rightFingerEnd: {fileID: 1478897932}
 --- !u!4 &1883744197 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2242083384207677083, guid: 264315b642bc18b4e92754cd2b58d710,
@@ -1380,10 +1434,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stickType: {fileID: 6093607988509874803, guid: 1319243f4414960458d72c9e71a2e6ef,
     type: 3}
-  cameraView: {fileID: 0}
+  cameraView: {fileID: 1478897938}
   targetPoint: {fileID: 2088046986}
-  leftHand: {fileID: 0}
-  rightHand: {fileID: 0}
+  leftHand: {fileID: 1478897937}
+  rightHand: {fileID: 1478897936}
+  leftPalm: {fileID: 1478897935}
+  rightPalm: {fileID: 1478897934}
+  leftFingerEnd: {fileID: 1478897933}
+  rightFingerEnd: {fileID: 1478897932}
 --- !u!4 &2088046986 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3261494460384623, guid: 51e80717957d593469a2b0cc9ac8e898,
