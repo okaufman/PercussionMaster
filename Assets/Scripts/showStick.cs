@@ -12,6 +12,11 @@ public class showStick : MonoBehaviour
 
     public Transform leftPalm, rightPalm, leftFingerEnd, rightFingerEnd;
 
+    public float xMin = 0.3f;
+    public float xMax = 0.7f;
+    public float zMin = 0.3f;
+    public float zMax = 0.7f;
+
     private bool availableSticks = false;
     private GameObject leftStick = null;
     private GameObject rightStick = null;
@@ -26,7 +31,7 @@ public class showStick : MonoBehaviour
     void Update()
     {
         Vector3 screenPoint = cameraView.WorldToViewportPoint(targetPoint.position);
-        bool onScreen = screenPoint.x > 0.4 && screenPoint.x < 0.6 && screenPoint.z > 0.4 && screenPoint.z > 0.6;
+        bool onScreen = screenPoint.x > xMin && screenPoint.x < xMax && screenPoint.z > zMin && screenPoint.z < zMax;
         if(onScreen && !availableSticks && isHandClosed())
         {
             availableSticks = true;

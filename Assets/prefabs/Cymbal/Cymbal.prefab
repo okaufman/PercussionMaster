@@ -396,6 +396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3261494460384623}
   - component: {fileID: 48575043}
+  - component: {fileID: 2088046985}
   m_Layer: 0
   m_Name: Cymbal
   m_TagString: Untagged
@@ -434,3 +435,33 @@ MonoBehaviour:
   spotLight: {fileID: 0}
   cameraView: {fileID: 0}
   targetPoint: {fileID: 3261494460384623}
+  xMin: 0.3
+  xMax: 0.65
+  zMin: 1
+  zMax: 1.6
+--- !u!114 &2088046985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6113842939086886174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bec2969100af554cb7378af9e3cad52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stickType: {fileID: 6093607988509874803, guid: 1319243f4414960458d72c9e71a2e6ef,
+    type: 3}
+  cameraView: {fileID: 0}
+  targetPoint: {fileID: 3261494460384623}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
+  leftPalm: {fileID: 0}
+  rightPalm: {fileID: 0}
+  leftFingerEnd: {fileID: 0}
+  rightFingerEnd: {fileID: 0}
+  xMin: 0.3
+  xMax: 0.65
+  zMin: 1
+  zMax: 1.6

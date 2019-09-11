@@ -366,6 +366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 924518096087804565}
   - component: {fileID: 1875680451}
+  - component: {fileID: 1324541120}
   m_Layer: 0
   m_Name: Drum
   m_TagString: Untagged
@@ -405,3 +406,33 @@ MonoBehaviour:
   spotLight: {fileID: 0}
   cameraView: {fileID: 0}
   targetPoint: {fileID: 924518096087804565}
+  xMin: 0.3
+  xMax: 0.65
+  zMin: 0.4
+  zMax: 0.7
+--- !u!114 &1324541120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924518096087804564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bec2969100af554cb7378af9e3cad52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stickType: {fileID: 7064803483598027860, guid: 40336527280a6f9408d8b91e181aec7e,
+    type: 3}
+  cameraView: {fileID: 0}
+  targetPoint: {fileID: 924518096087804565}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
+  leftPalm: {fileID: 0}
+  rightPalm: {fileID: 0}
+  leftFingerEnd: {fileID: 0}
+  rightFingerEnd: {fileID: 0}
+  xMin: 0.3
+  xMax: 0.65
+  zMin: 4
+  zMax: 0.7
