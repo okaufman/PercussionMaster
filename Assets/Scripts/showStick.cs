@@ -31,8 +31,19 @@ public class showStick : MonoBehaviour
         if(onScreen && !availableSticks && isHandClosed())
         {
             availableSticks = true;
-            leftStick = Instantiate(stickType, leftHand,false);
+            leftStick = Instantiate(stickType, leftHand, false);
+
+            //Connect joint
+            Joint joint = leftHand.GetComponent<Joint>();
+            Rigidbody rb = leftStick.GetComponent<Rigidbody>();
+            joint.connectedBody = rb;
+
             rightStick = Instantiate(stickType, rightHand, false);
+
+            //Connect joint
+            Joint joint1 = rightFingerEnd.GetComponent<Joint>();
+            Rigidbody rb1 = rightStick.GetComponent<Rigidbody>();
+            joint1.connectedBody = rb1;
         }
         else if(!onScreen || !isHandClosed())
         {
@@ -48,9 +59,6 @@ public class showStick : MonoBehaviour
 
         float leftHandDistanz = (leftPalm.position - leftFingerEnd.position).sqrMagnitude;
         float rightHandDistanz = (rightPalm.position - rightFingerEnd.position).sqrMagnitude;
-
-        Debug.Log("Left: " + leftHandDistanz);
-        Debug.Log("Right: " + rightHandDistanz);
 
         if (leftHandDistanz < 0.02 && rightHandDistanz < 0.02)
             closedHand = true;

@@ -20,7 +20,14 @@ public class drumscript : MonoBehaviour
       //  Debug.Log("hit");
         drumSound.Play();
 
-  ;
+
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("collision hit");
+        drumSound.Play();
 
     }
 }
