@@ -10,7 +10,7 @@ public class vibrateLeft : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     { 
-        Debug.Log("hatics trigger entered");
+        Debug.Log("haptics trigger entered");
 
         
             hapticAction.Execute(0, 0.1f, 150, 75, SteamVR_Input_Sources.LeftHand);
