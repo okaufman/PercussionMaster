@@ -19,7 +19,11 @@ public class stickCollision : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("collision hit");
-        stickSound.Play();
+        
+        if (collision.gameObject.tag == "stick")
+        {
+            stickSound.Play();
+        }
 
     }
 }

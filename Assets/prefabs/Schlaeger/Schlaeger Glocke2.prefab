@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8958188714949874057}
   m_Layer: 0
   m_Name: Schlaeger Glocke2
-  m_TagString: Untagged
+  m_TagString: stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,9 +88,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f2f3f65cc252a77478f77883a5c26336, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_audioClip: {fileID: 8300000, guid: f72c8336d3434624bb2f0e00b26cf497, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.795
   m_Pitch: 1
   Loop: 0
   Mute: 0
