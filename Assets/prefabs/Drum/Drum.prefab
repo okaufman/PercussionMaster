@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 8946003632899601716}
   m_Layer: 0
   m_Name: Drum
-  m_TagString: Untagged
+  m_TagString: BoxCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

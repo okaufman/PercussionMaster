@@ -212,6 +212,23 @@ PrefabInstance:
       propertyPath: rightFingerEnd
       value: 
       objectReference: {fileID: 1900241996}
+    - target: {fileID: 4514497948990235465, guid: 51e80717957d593469a2b0cc9ac8e898,
+        type: 3}
+      propertyPath: m_TagString
+      value: otherCollider
+      objectReference: {fileID: 0}
+    - target: {fileID: 13319240, guid: 51e80717957d593469a2b0cc9ac8e898, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -0.088055074
+      objectReference: {fileID: 0}
+    - target: {fileID: 13319240, guid: 51e80717957d593469a2b0cc9ac8e898, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 1.6307765
+      objectReference: {fileID: 0}
+    - target: {fileID: 13319240, guid: 51e80717957d593469a2b0cc9ac8e898, type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.05509305
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e80717957d593469a2b0cc9ac8e898, type: 3}
 --- !u!1 &342732241
@@ -689,6 +706,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &826907538
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &862725533
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,7 +922,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!43 &1244287964
+--- !u!43 &1452106620
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1137,6 +1188,11 @@ PrefabInstance:
       propertyPath: rightFingerEnd
       value: 
       objectReference: {fileID: 1900241996}
+    - target: {fileID: 2349104708780492922, guid: 264315b642bc18b4e92754cd2b58d710,
+        type: 3}
+      propertyPath: m_TagString
+      value: BoxCollider
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 264315b642bc18b4e92754cd2b58d710, type: 3}
 --- !u!1001 &1875680445
@@ -1150,6 +1206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Drum
+      objectReference: {fileID: 0}
+    - target: {fileID: 924518096087804564, guid: e1236fb96ddbf8b4badfad65c70276a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: BoxCollider
       objectReference: {fileID: 0}
     - target: {fileID: 924518096087804565, guid: e1236fb96ddbf8b4badfad65c70276a5,
         type: 3}
@@ -1320,12 +1381,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2015698962}
+      objectReference: {fileID: 826907538}
     - target: {fileID: 6774107973184468039, guid: 769476291dea96240ac4946e965a36d7,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1244287964}
+      objectReference: {fileID: 1452106620}
     - target: {fileID: 6774107974344926326, guid: 769476291dea96240ac4946e965a36d7,
         type: 3}
       propertyPath: ModelPool.Array.data[0].IsLeftToBeSpawned
@@ -1380,37 +1441,3 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 1900241995}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &2015698962
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}

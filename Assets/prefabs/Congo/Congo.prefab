@@ -320,6 +320,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder
       objectReference: {fileID: 0}
+    - target: {fileID: 7395914066026020252, guid: 58a53f6f19164f0469581bb4ccdf9a29,
+        type: 3}
+      propertyPath: m_TagString
+      value: BoxCollider
+      objectReference: {fileID: 0}
     - target: {fileID: 3561639800516578622, guid: 58a53f6f19164f0469581bb4ccdf9a29,
         type: 3}
       propertyPath: m_LocalPosition.x

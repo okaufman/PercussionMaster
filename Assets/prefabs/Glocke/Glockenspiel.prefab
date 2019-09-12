@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 1715228578}
   m_Layer: 0
   m_Name: Glocke
-  m_TagString: Untagged
+  m_TagString: BoxCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

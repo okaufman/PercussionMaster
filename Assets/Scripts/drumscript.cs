@@ -26,8 +26,29 @@ public class drumscript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("collision hit");
-        drumSound.Play();
+        if (this.gameObject.CompareTag("otherCollider") || this.gameObject.CompareTag("BoxCollider") && isHittedOnTop(this.gameObject, collision.gameObject))
+            drumSound.Play();
 
+    }
+
+    private bool isHittedOnTop(GameObject Object, GameObject ObjectHit)
+    {
+        bool hittedOnTop = false;
+        RaycastHit MyRayHit;
+        Vector3 direction = (Object.transform.position - ObjectHit.transform.position).normalized;
+        Ray MyRay = new Ray(ObjectHit.transform.position, direction);
+
+        if (Physics.Raycast(MyRay, out MyRayHit))
+        {
+            if (MyRayHit.collider != null)
+            {
+                Vector3 MyNormal = MyRayHit.normal;
+                MyNormal = MyRayHit.transform.TransformDirection(MyNormal);
+
+                if (MyNormal == MyRayHit.transform.up)
+                    hittedOnTop = true;
+            }
+        }
+        return hittedOnTop;
     }
 }

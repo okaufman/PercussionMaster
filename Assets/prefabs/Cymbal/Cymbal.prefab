@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 430730886}
   m_Layer: 0
   m_Name: cymbal1
-  m_TagString: Untagged
+  m_TagString: otherCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
