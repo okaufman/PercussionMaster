@@ -108,7 +108,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &247820193
+--- !u!65 &3704395239382831736
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,11 +116,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2349104708780492922}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 12.641152, z: 1.0000002}
-  m_Center: {x: 0.000000074505806, y: -5.3205733, z: -0.000000074505806}
+  m_Size: {x: 1.0000001, y: 12.677612, z: 1.0000002}
+  m_Center: {x: 0.000000074505806, y: -5.3023434, z: -0.000000074505806}
 --- !u!82 &1111313638
 AudioSource:
   m_ObjectHideFlags: 0
@@ -230,19 +230,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumSound: {fileID: 1111313638}
---- !u!65 &3704395239382831736
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2349104708780492922}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 12.641152, z: 1.0000002}
-  m_Center: {x: 0.000000074505806, y: -5.3205733, z: -0.000000074505806}
 --- !u!1 &7875536349391183084
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +395,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 87877873e4472194f8b992edd78d8fcb, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3565025950647870907, guid: 58a53f6f19164f0469581bb4ccdf9a29, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 58a53f6f19164f0469581bb4ccdf9a29, type: 3}
 --- !u!1 &2349104708780492922 stripped
 GameObject:

@@ -165,9 +165,7 @@ GameObject:
   - component: {fileID: 924518095662967397}
   - component: {fileID: 924518095662967416}
   - component: {fileID: 924518095662967399}
-  - component: {fileID: 6506104228208261067}
   - component: {fileID: 1875680448}
-  - component: {fileID: 1875680447}
   m_Layer: 0
   m_Name: Fell
   m_TagString: Untagged
@@ -234,19 +232,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6506104228208261067
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924518095662967396}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000002, y: 90.09361, z: 1.0000004}
-  m_Center: {x: 0, y: -46.046806, z: 0}
 --- !u!82 &1875680448
 AudioSource:
   m_ObjectHideFlags: 0
@@ -343,19 +328,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1875680447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924518095662967396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6cb820dfa5dbe4438f8e8c7bca9778b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  drumSound: {fileID: 1875680448}
 --- !u!1 &924518096087804564
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,6 +339,8 @@ GameObject:
   - component: {fileID: 924518096087804565}
   - component: {fileID: 1875680451}
   - component: {fileID: 1324541120}
+  - component: {fileID: 6991890381367683575}
+  - component: {fileID: 8946003632899601716}
   m_Layer: 0
   m_Name: Drum
   m_TagString: Untagged
@@ -436,3 +410,29 @@ MonoBehaviour:
   xMax: 0.65
   zMin: 0.4
   zMax: 0.85
+--- !u!65 &6991890381367683575
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924518096087804564}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3684473, y: 0.31720364, z: 0.37091184}
+  m_Center: {x: -0.010492325, y: -0.15396935, z: 0.0019272566}
+--- !u!114 &8946003632899601716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924518096087804564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6cb820dfa5dbe4438f8e8c7bca9778b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drumSound: {fileID: 1875680448}
