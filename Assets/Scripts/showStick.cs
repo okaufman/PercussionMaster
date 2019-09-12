@@ -41,7 +41,7 @@ public class showStick : MonoBehaviour
             rightStick = Instantiate(stickType, rightHand, false);
 
             //Connect joint
-            Joint joint1 = rightFingerEnd.GetComponent<Joint>();
+            Joint joint1 = rightHand.GetComponent<Joint>();
             Rigidbody rb1 = rightStick.GetComponent<Rigidbody>();
             joint1.connectedBody = rb1;
         }
